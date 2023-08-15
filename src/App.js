@@ -1,12 +1,12 @@
 import React from 'react';
-// import Home from './Home';
-// import './index.css';
-import infoCards from './components/inforCards';
+import Home from './Home';
+import './index.css';
+
 
 function App() {
   return (
     <>
-    <infoCards />
+    <Home />
     </>
   );
 }
