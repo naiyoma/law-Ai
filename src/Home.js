@@ -2,24 +2,23 @@ import React from 'react';
 import Navbar from "./components/Navbar";
 import './index.css';
 import InfoCard  from './components/inforCards';
-import CoverImage from './components/ImageCover';
+import HomePage from './components/ImageCover';
 import ProgramsContent from './components/Programs';
 
 function Home() {
   return (
     <>
     <Navbar/>
-    <div className="grid grid-rows-3 grid-flow-col gap-1 bg-rose-300 h-fit">
+    <div className="grid grid-rows-3 grid-flow-col h-fit">
     <div>
-      <ProgramsContent />
+      <HomePage />
       </div>
       <div>
-      <InfoCard />
+      <InfoCard className="pt-8"/>
       </div>
       <div>
-        <ProgramsContent />
+        <ProgramsContent className="pb-2"/>
       </div>
-      
     </div>
     </>
   );
