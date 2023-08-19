@@ -3,7 +3,7 @@ import React from 'react';
 
 function InfoCards() {
   return (
-    <div className=''>
+    <div className='ml-6'>
     <div className='h-fit'>
       <h1 className="text-2xl font-bold text-center">Read Articles</h1>    
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-12">
