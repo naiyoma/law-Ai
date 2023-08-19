@@ -10,10 +10,10 @@ function Home() {
   return (
     <>
     <Navbar/>
-    <div className="grid grid-rows-4 h-fit">
+    <div className="grid grid-rows-1 h-fit">
       <HomePage />     
-      <InfoCard className="pt-8"/>
-      <ProgramsContent className="pb-2"/>
+      <InfoCard />
+      <ProgramsContent />
       <Footer />
       </div>
     </>

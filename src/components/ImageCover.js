@@ -23,7 +23,7 @@ import AboutSvg from "../assets/about-img.svg";
 
 export default function HomePage() {
     return (
-        <div className="h-fit">
+        <div className="">
         <div className="grid md:grid-cols-2 gap-4 p-4 md:p-8">
           <div className="p-4">
           <h2 className="text-2xl md:text-4xl font-extrabold dark:text-white">
