@@ -3,6 +3,12 @@ import AboutSvg from "../assets/about-img.svg";
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
+    const [showCard, setShowCard] = useState(false);
+
+    const handleReadMoreClick = () => {
+      setShowCard(true);
+    };
+    const [showModal, setShowModal] = useState(false);
     return (
         <div className="">
         <div className="grid md:grid-cols-2 gap-4 p-4 md:p-8">
@@ -19,12 +25,22 @@ export default function HomePage() {
             strive to raise awareness, facilitate cross-disciplinary collaboration, and promote research and critical analysis at the intersection of technology,
             artificial intelligence, and the law.
             </p>
-            <a href="#" className="inline-flex items-center text-base md:text-lg text-blue-600 dark:text-blue-500 hover:underline">
-              <Link to="/programs">Read more</Link>
+            <a href="#" className="inline-flex items-center text-base md:text-lg text-blue-600 dark:text-blue-500 hover:underline" onClick={() => setShowModal(true)}>
+              Read more
               <svg className="w-3 h-3.5 md:w-3.5 md:h-3.5 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
               </svg>
             </a>
+                      {showModal && (
+            <div
+            id="authentication-modal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
+        
+            </div>
+                    
+            )}
           </div>
           <div className="md:flex md:items-center md:justify-center p-4">
             <img src={AboutSvg} alt="Logo" className="max-w-full h-auto" />

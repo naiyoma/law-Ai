@@ -3,13 +3,14 @@ import React from 'react';
 import Home from './Home';
 import './index.css';
 import Guide from "./components/Guide";
+import Details from "./components/Details"
 
 
 function App() {
   return (
     <Router>
         <Routes>
-          <Route exact path="/" element={<Guide/>}/>
+          <Route exact path="/" element={<Home/>}/>
         </Routes>
     </Router>
   );
