@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AboutSvg from "../assets/about-img.svg";
+import { Link } from "react-router-dom";
 
 export default function ProgramsContent() {
     return (
@@ -26,12 +27,12 @@ export default function ProgramsContent() {
             <p className="mb-2 md:mb-4 text-base md:text-lg font-normal text-gray-500 dark:text-gray-400">
             4. Workshops and Seminars: Host interactive workshops and seminars focused on specific legal topics related to technology, artificial intelligence,
             and machine learning. Encourage active participation, facilitate discussions, and provide practical insights to participants.            </p>
-            <a href="#" className="inline-flex items-center text-base md:text-lg text-blue-600 dark:text-blue-500 hover:underline">
-              Read more
+            <Link to="/guide" className="inline-flex items-center text-base md:text-lg text-blue-600 dark:text-blue-500 hover:underline">
+            Read more
               <svg className="w-3 h-3.5 md:w-3.5 md:h-3.5 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

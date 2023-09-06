@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -61,7 +62,8 @@ export default function NavBar() {
                                 <a href="javascript:void(0)">Home</a>
                             </li>
                             <li className="text-slate-800 hover:text-blue-600">
-                                <a href="javascript:void(0)">Blog</a>
+                                {/* <a href="javascript:void(0)">Blog</a> */}
+                                <Link to="/blog">Blog</Link>
                             </li>
                             <li className="text-slate-800 hover:text-blue-600">
                                 <a href="javascript:void(0)">About</a>
@@ -70,11 +72,10 @@ export default function NavBar() {
                                 <a href="javascript:void(0)" onClick={() => setShowModal(true)}>Contact us</a>
                             </li>
                             <li className="text-slate-800 hover:text-blue-600">
-                                <a href="javascript:void(0)">Programs</a>
+                                
+                                <Link to="/blog">Programs</Link>
                             </li>
-                            <li className="text-slate-800 hover:text-blue-600">
-                                <a href="javascript:void(0)">Events</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
