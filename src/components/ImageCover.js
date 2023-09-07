@@ -6,7 +6,6 @@ export default function HomePage() {
     const [showModal, setShowModal] = useState(false);
     return (
         <div className="">
-          
         <div className="grid md:grid-cols-2 gap-4 p-4 md:p-8">
           <div className="p-4">
           <h4 className="text-base md:text-2xl font-extrabold dark:text-white ">
@@ -34,7 +33,7 @@ export default function HomePage() {
           {showModal ? (
   <>
     {/* Background overlay */}
-    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-opacity-50 bg-black">
+    <div className="justify-center items-center flex  fixed inset-0 z-50 outline-none focus:outline-none bg-opacity-50 bg-black">
       <div className="relative w-auto my-6 mx-auto max-w-3xl">
         <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
           {/* Modal header */}

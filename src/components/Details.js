@@ -2,13 +2,16 @@ import React from 'react';
 import { useState } from "react";
 import NavBar from './Navbar';
 
+
 export default function Details() {
     return ( 
-        <div className="">
-<section class="bg-white dark:bg-gray-900">
+<div className="">
+    <NavBar />        
+<section class=" dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div class="max-w-screen-md mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Tech AI Law Network-TALN Guiding Plans </h2>
+      <h2 class="mb-4 text-2xl tracking-tight font-bold text-gray-800 dark:text-white">Our Guidlines</h2>
+
           <p class="text-gray-500 sm:text-xl dark:text-gray-400">At TALN, our central focus lies at the intersection of law and technology. We strategically harness the forces of innovation and capital to unlock enduring value, propelling the engine of long-term economic growth</p>
       </div>
       <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
