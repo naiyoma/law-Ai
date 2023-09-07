@@ -87,17 +87,35 @@ export default function HomePage() {
 
           {/* Focus Area */}
           <div className="p-5 border-b border-solid border-slate-200 rounded-t">
-            <h4 className="text-xl font-semibold text-gray-500">Focus Area:</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-              <div className="flex items-center text-gray-500">
-                <span className="mr-2">&#8226;</span>
-                Privacy laws relating to tech
-                <span className="mr-2">&#8226;</span>
-                Privacy laws relating to tech
+              <h4 className="text-xl font-semibold text-gray-500">Focus Area:</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4">
+                <div className="flex items-center text-gray-500">
+                  <span className="mr-2">&#8226;</span>
+                  Privacy laws relating to tech
+                </div>
+                <div className="flex items-center text-gray-500">
+                  <span className="mr-2">&#8226;</span>
+                  Intellectual property law
+                </div>
+                <div className="flex items-center text-gray-500">
+                  <span className="mr-2">&#8226;</span>
+                  Human rights and technology
+                </div>
+                <div className="flex items-center text-gray-500">
+                  <span className="mr-2">&#8226;</span>
+                  Legal technologies
+                </div>
+                <div className="flex items-center text-gray-500">
+                  <span className="mr-2">&#8226;</span>
+                  Property law
+                </div>
+                <div className="flex items-center text-gray-500">
+                  <span className="mr-2">&#8226;</span>
+                  Data protection
+                </div>
+                {/* Add more focus areas here */}
               </div>
-              {/* Add more focus areas here */}
             </div>
-          </div>
         </div>
       </div>
     </div>
