@@ -59,7 +59,6 @@ export default function NavBar() {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-slate-800 hover:text-blue-600">
-                              
                                 <Link to="/">Home</Link>
                             </li>
                             <li className="text-slate-800 hover:text-blue-600">
@@ -88,7 +87,7 @@ export default function NavBar() {
             aria-hidden="true"
             class="fixed top-0 left-0 right-0 z-50 w-full h-full bg-black bg-opacity-50 flex items-center justify-center"
           >
-            <div class="">
+            <div class="relative w-full max-w-md max-h-full sm:max-w-sm sm:px-8">
               <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                 <button
                   type="button"
